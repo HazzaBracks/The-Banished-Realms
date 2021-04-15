@@ -20,4 +20,4 @@ intro = input("Welcome to The Banished Realms, a medieval text-based input rpg -
     campsite = input("What do you do? \n a. Fill the backpack with the sword and leave the campsite \n b. Leave without backpack and items \n c. Continue to inspect the campsite
       if campsite.lower() == "c":
         print("You continued to search the surrounding area, and found a small purse of 50 golden coins, and a large, heavy, axe lodged in a tree stump.")
-                     
+          campinspected = input(Now that you have inspected the campsite, do you choose to leave it with or without the backpack? \n a. Leave with backpack \n b. Leave without backpack”)
