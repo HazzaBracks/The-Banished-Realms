@@ -20,22 +20,17 @@ while True:
     elif intro.lower() == "y":
         print("Glad to hear it! - Your glorious adventure awaits!")
         time.sleep(1)
-        print(
-            "You wake up in a small, but messy tent, which sounds as though it is in the middle of a tranquil forest,")
+        print("You wake up in a small, but messy tent, which sounds as though it is in the middle of a tranquil forest,")
         print("with the wind whispering through the leaves, and many a bird chirping in the distance.")
-        print(
-            "When you look through the open flaps of the tent, you see a slowly dying campfire stationed directly in front of your tent.")
-        print(
-            "There is also a large backpack sitting to your left, and a few small snacks as well as a wooden shortsword on your right.")
+        print("When you look through the open flaps of the tent, you see a slowly dying campfire stationed directly in front of your tent.")
+        print("There is also a large backpack sitting to your left, and a few small snacks as well as a wooden shortsword on your right.")
         while True:
             campsite = input(
                 "What do you do? \n a. Fill the backpack with the sword and food and then leave the campsite \n b. Leave without backpack and items \n c. Continue to inspect the campsite\nEnter your choice here: ")
             if campsite.lower() == "c":
                 while True:
-                    print(
-                        "You continued to search the surrounding area, and found a small purse of 50 golden coins, and a large, heavy, axe lodged in a tree stump.")
-                    campinspected = input(
-                        "Now that you have inspected the campsite, do you choose to leave it with or without the backpack? \n a. Leave with backpack \n b. Leave without backpack\nEnter your choice here: ")
+                    print("You continued to search the surrounding area, and found a small purse of 50 golden coins, and a large, heavy, axe lodged in a tree stump.")
+                    campinspected = input("Now that you have inspected the campsite, do you choose to leave it with or without the backpack? \n a. Leave with backpack \n b. Leave without backpack\nEnter your choice here: ")
                     if campinspected.lower() == "b":
                         leftCamp = True
                         break
@@ -76,4 +71,10 @@ while True:
     else:
         print("Invalid Input!\n")
 if leftCamp: 
-    print("You left the camp...(insert text here)")
+    print("You left the camp, and before you sits an expansive forest. You see that there is a narrow dirt path, and you follow it.  \n After a few minutes of walking, you notice a fork in the path up ahead, with a sign post with signs pointing towards the paths. The sign leading to the left says "To (Elven Village)", and the sign to the right says "To Elven Forest")
+    whichway = input("Which way do you choose? \n a. Left \n b. Right \n (Left goes to town, Right goes deeper into forest)")
+          if whichway.lower() == "a":
+          enemyEncounter = random.randint(1-3)
+          break
+          if whichway.lower() == "b":
+          enemyEncounter = random.randint(2-5)
