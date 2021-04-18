@@ -2,6 +2,7 @@ import pygame
 import time
 import random
 #variables
+health = 100
 coins = 0
 leftCamp = False
 backpackSword = False
@@ -39,8 +40,7 @@ while True:
                             swordOrAxe = input(
                                 "You try putting the axe and the sword in your backpack, but only one of them will fit. \n The sword looks pretty blunt, but very accurate, and the axe looks much sharper, but a less accurate swing. Which one will you choose? \n a. Sword (Less damage, higher accuracy) \n b. Axe (More damage, lower accuracy\nEnter your choice here: ")
                             if swordOrAxe.lower() == "a":
-                                print(
-                                    "You put the sword into your backpack, along with the food and the purse of coins.")
+                                print("You put the sword into your backpack, along with the food and the purse of coins.")
                                 backpackSword = True
                                 leftCamp = True
                                 commonFood = 5
@@ -78,3 +78,6 @@ if leftCamp:
           break
           if whichway.lower() == "b":
           enemyEncounter = random.randint(2-5)
+    if enemyEncounter = 1:
+          print("While walking through the forest towards town, you spot a large, but lone wolf standing in the forest, and it looks hungry. It notices you, and begins to run towards you, while snarling loudly. You can choose to run away, or try and fight the wolf to get its meat.
+          wolf = input("blah blah sorry i had to go")
