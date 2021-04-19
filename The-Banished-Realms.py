@@ -79,5 +79,9 @@ if leftCamp:
           if whichway.lower() == "b":
           enemyEncounter = random.randint(2-5)
     if enemyEncounter = 1:
-          print("While walking through the forest towards town, you spot a large, but lone wolf standing in the forest, and it looks hungry. It notices you, and begins to run towards you, while snarling loudly. You can choose to run away, or try and fight the wolf to get its meat.
-          wolf = input("blah blah sorry i had to go")
+          print("While walking through the forest towards town, you spot a large, but lone wolf standing in the forest, and it looks hungry. It notices you, and begins to run towards you, while snarling loudly. You can choose to run away, or try and fight the wolf to get its meat.")
+          wolf = input("What do you do? \n a. Attack the wolf \n b. Run away from the wolf")
+            if wolf.lower() == "b":
+                print("You somehow got away from the wolf, but it managed to create a deep gash in your left arm, causing you to lose a substantial amount of health. \n*You lose 30 health points*")
+                health -= 30
+                print("You health is now *health(idk the command for this, but i want it to display *")
