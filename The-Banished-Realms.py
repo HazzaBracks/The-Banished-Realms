@@ -12,6 +12,7 @@ woodAxe = False #higher damage, less hit chance
 commonFood = 0
 regularFood = 0 
 luxuriousFood = 0 #different food will have different healing amounts
+path2 = False
 
 #intro
 while True:
@@ -84,4 +85,11 @@ if leftCamp:
             if wolf.lower() == "b":
                 print("You somehow got away from the wolf, but it managed to create a deep gash in your left arm, causing you to lose a substantial amount of health. \n*You lose 30 health points*")
                 health -= 30
-                print("You health is now *health(idk the command for this, but i want it to display *")
+                print("You health is now {health}")
+                path2 = True
+          
+    if path2 = True:
+          enemyEncounter = random.randint
+          
+    if path3 = True:
+          enemyEncounter = random.randint
