@@ -13,6 +13,8 @@ commonFood = 0
 regularFood = 0 
 luxuriousFood = 0 #different food will have different healing amounts
 path2 = False
+swordHitChance = (0,100)
+axeHitChance = (0,75)
 
 #intro
 while True:
@@ -31,15 +33,14 @@ while True:
                 "What do you do? \n a. Fill the backpack with the sword and food and then leave the campsite \n b. Leave without backpack and items \n c. Continue to inspect the campsite\nEnter your choice here: ")
             if campsite.lower() == "c":
                 while True:
-                    print("You continued to search the surrounding area, and found a small purse of 50 golden coins, and a large, heavy, axe lodged in a tree stump.")
+                    print("You continued to search the surrounding area, and found a small purse of 50 coins, and a large, heavy, axe lodged in a tree stump.")
                     campinspected = input("Now that you have inspected the campsite, do you choose to leave it with or without the backpack? \n a. Leave with backpack \n b. Leave without backpack\nEnter your choice here: ")
                     if campinspected.lower() == "b":
                         leftCamp = True
                         break
                     elif campinspected.lower() == "a":
                         while True:
-                            swordOrAxe = input(
-                                "You try putting the axe and the sword in your backpack, but only one of them will fit. \n The sword looks pretty blunt, but very accurate, and the axe looks much sharper, but a less accurate swing. Which one will you choose? \n a. Sword (Less damage, higher accuracy) \n b. Axe (More damage, lower accuracy\nEnter your choice here: ")
+                            swordOrAxe = input("You try putting the axe and the sword in your backpack, but only one of them will fit. \n The sword looks pretty blunt, but very accurate, and the axe looks much sharper, but a less accurate swing. Which one will you choose? \n a. Sword (Less damage, higher accuracy) \n b. Axe (More damage, lower accuracy\nEnter your choice here: ")
                             if swordOrAxe.lower() == "a":
                                 print("You put the sword into your backpack, along with the food and the purse of coins.")
                                 backpackSword = True
@@ -78,18 +79,42 @@ if leftCamp:
           enemyEncounter = random.randint(1-3)
           break
           if whichway.lower() == "b":
-          enemyEncounter = random.randint(2-5)
-    if enemyEncounter = 1:
-          print("While walking through the forest towards town, you spot a large, but lone wolf standing in the forest, and it looks hungry. It notices you, and begins to run towards you, while snarling loudly. You can choose to run away, or try and fight the wolf to get its meat.")
-          wolf = input("What do you do? \n a. Attack the wolf \n b. Run away from the wolf")
+          enemyEncounter = random.randint(2-4)
+    if enemyEncounter = 4:
+          print("While walking through the forest, you spot a large, but lone wolf standing in the forest, and it looks hungry. It notices you, and begins to run towards you, while snarling loudly. You can choose to run away, or try and fight the wolf to get its meat.")
+          wolf = input("What do you do? \n a. Attack the wolf \n b. Run away")
             if wolf.lower() == "b":
                 print("You somehow got away from the wolf, but it managed to create a deep gash in your left arm, causing you to lose a substantial amount of health. \n*You lose 30 health points*")
                 health -= 30
-                print("You health is now {health}")
-                path2 = True
-          
-    if path2 = True:
-          enemyEncounter = random.randint
-          
-    if path3 = True:
-          enemyEncounter = random.randint
+                print(f"Your health is now {health}")
+            if wolf.lower() == "a":
+    if enemyEncounter = 3:
+          print("You are strolling through the forest, and hear a little bit of rustling in the leaves in front of you. Before you can tell what's going on, a young, but strong-looking bear walks up to you and growls.")
+          youngBear = input("What do you do? \n a. Attack the young bear \n b. Run away")
+            if youngBear.lower() == "b": 
+                print("When you tried running away, the young bear slashed your back with its developing claws. \n*You lose 25 health points*")
+                health -= 25
+                print(f"Your health is now {health}")
+    if enemyEncounter = 2:
+          print("While walking through a meadow, you hear a lot of screeching and snorting, and then all of a sudden a wild boar runs up to you.")
+          boar = input("What do you do? \n a. Attack the boar \n b. Run away")
+            if boar.lower() == "b":
+                print("While running as fast as you can away from the boar, it easily outruns you, and rams you into a tree at full speed, and then walks away. \n*You lose 40 health points*
+                health -= 25
+                print(f"Your health is now {health}")
+    if enemyEncounter = 1:
+          print("You are walking on the path that leads towards town, and you come across a group of thugs, and one of them approaches you. He pulls out a dagger and says: Give me your money or else!")
+          thug = input("What do you do? \n a. Resist, and attack the thug \n b. Run away")
+            if thug.lower() == "b":
+                if coins = 50:
+                    print("You try running away from the thug, but his goons have surrounded you and they knocked you out before you could run a meter. When you wake up, you have a headache, and when you check your backpack, you lost your purse full of money. \n*You lost 50 Coins*")
+                    health -= 10
+                    print(f"Your health is now {health}")         
+                    print(f"Your coin amount is now {coins}")
+                if coins = 0:
+                    print("You try running away from the thug, but his goons have surrounded you and they knocked you out before you could run a meter. When you wake up, you have a headache, and when you check your backpack, you lost your purse full of money. \n*You lost 50 Coins*")
+                    health -= 10
+                    print(f"Your health is now {health}")         
+                    print(f"Your coin amount is now {coins}")
+                      
+         
