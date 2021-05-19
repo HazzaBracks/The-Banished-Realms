@@ -12,4 +12,4 @@ I will learn how to put keybinds and images together to form a cohesive GUI whic
 
 In the game, I also credit all of the artist from which I used art in order to pixelate and put into my game. 
 
-Here are a few examples of possible gameplay scenarios that you could come across in the game.
+The images you need in order to display the gameplay are provided in the repository.
