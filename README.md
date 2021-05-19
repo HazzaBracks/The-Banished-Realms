@@ -12,4 +12,5 @@ I will learn how to put keybinds and images together to form a cohesive GUI whic
 
 In the game, I also credit all of the artist from which I used art in order to pixelate and put into my game. 
 
-The images you need in order to display the gameplay are provided in the repository.
+The images you need in order to display the gameplay are provided in the repository. You have to download them in order for them to be able to display during gameplay.
+![image](https://user-images.githubusercontent.com/78081392/118766411-ac3bfc80-b87c-11eb-9de9-a3a8f56597d2.png)
