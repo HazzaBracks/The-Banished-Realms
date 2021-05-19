@@ -11,3 +11,5 @@ In this project I had to learn how to use pygame effectively for visuals, and on
 I will learn how to put keybinds and images together to form a cohesive GUI which is completely foolproof, and any other inputs will not have an effect, rendering my game very intuitive.
 
 In the game, I also credit all of the artist from which I used art in order to pixelate and put into my game. 
+
+Here are a few examples of possible gameplay scenarios that you could come across in the game.
